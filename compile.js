@@ -35,6 +35,8 @@ function compilation() {
     const outputContract = output.contracts['Lottery.sol']['lottery']
     // console.log(outputContract);
     module.exports.abi = outputContract.abi
+    console.log(JSON.stringify(outputContract.abi));
+
     module.exports.bytecode = outputContract.evm.bytecode.object
 
 
